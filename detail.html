@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Destino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topbar">
+        <h1>Agencia de Viajes</h1>
+    </div>
+    <div class="container" id="detail">
+        <div class="detail-header">
+            <h1 id="city-title"></h1>
+            <img id="city-img" alt="City Image">
+        </div>
+        <div class="detail-content">
+            <p id="city-desc"></p>
+            <h2>Hoteles Disponibles</h2>
+            <div id="hotels"></div>
+            <div class="calculator">
+                <h3>Calculadora de Costos</h3>
+                <div class="calculator-inputs">
+                    <div>
+                        <label for="num-people">Cantidad de Personas:</label>
+                        <input type="number" id="num-people" value="1" min="1">
+                    </div>
+                    <div>
+                        <label for="num-nights">Cantidad de Noches:</label>
+                        <input type="number" id="num-nights" value="1" min="1">
+                    </div>
+                    <div>
+                        <label for="hotel-select">Seleccione Hotel:</label>
+                        <select id="hotel-select"></select>
+                    </div>
+                </div>
+                <h3>Total: $<span id="total-price"></span></h3>
+                <button class="btn" onclick="saveSelection()">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

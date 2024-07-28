@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+}
+
+.detail-header, .summary-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-header h1, .summary-header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.detail-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.detail-content, .summary-content {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom, #f0f8ff, #e3f2fd);
+}
+
+.detail-content p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.detail-content h2, .detail-content h3, .summary-content h2, .summary-content h3 {
+    color: #0277bd;
+}
+
+.calculator {
+    margin-top: 20px;
+}
+
+.calculator-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calculator-inputs div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.calculator-inputs label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.calculator-inputs input, .calculator-inputs select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+form .form-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card button, .btn {
+    padding: 12px 24px;
+    background-color: #0277bd;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.card button:hover, .btn:hover {
+    background-color: #01579b;
+}
